@@ -46,28 +46,40 @@ function Header() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-white dark:bg-slate-950 shadow-xl border-t border-slate-200 p-6 flex flex-col space-y-6 max-h-[80vh] overflow-y-auto">
-          <Link className="text-sm font-bold uppercase tracking-wider text-slate-800" onClick={() => setIsMobileMenuOpen(false)} to="/">Home</Link>
-          <Link className="text-sm font-bold uppercase tracking-wider text-slate-800" onClick={() => setIsMobileMenuOpen(false)} to="/about">About</Link>
-          <div className="space-y-4">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-slate-400">Services</h4>
-            <div className="flex flex-col space-y-3 pl-4 border-l-2 border-slate-100">
-                <Link className="text-sm text-slate-600" onClick={() => setIsMobileMenuOpen(false)} to="/services/financial-navigation">Financial Navigation</Link>
-                <Link className="text-sm text-slate-600" onClick={() => setIsMobileMenuOpen(false)} to="/services/life-science-advisory">Life Science Advisory</Link>
-                <Link className="text-sm text-slate-600" onClick={() => setIsMobileMenuOpen(false)} to="/services/financial-transformation">Financial Transformation</Link>
+        <div className="md:hidden fixed inset-x-0 top-20 bg-surface-container-lowest border-t border-outline-variant/30 h-[calc(100vh-5rem)] z-50 overflow-y-auto animate-in slide-in-from-top-4 duration-300">
+          <div className="p-8 flex flex-col space-y-10">
+            <div className="flex flex-col space-y-4">
+              <Link className="text-2xl font-black uppercase tracking-tight text-on-surface" onClick={() => setIsMobileMenuOpen(false)} to="/">Home</Link>
+              <Link className="text-2xl font-black uppercase tracking-tight text-on-surface" onClick={() => setIsMobileMenuOpen(false)} to="/about">About</Link>
             </div>
-          </div>
-          <div className="space-y-4">
-            <h4 className="text-sm font-bold uppercase tracking-wider text-slate-400">Training</h4>
-            <div className="flex flex-col space-y-3 pl-4 border-l-2 border-slate-100">
-                <Link className="text-sm text-slate-600" onClick={() => setIsMobileMenuOpen(false)} to="/training/patients-profitability">Patients &amp; Profitability™</Link>
-                <Link className="text-sm text-slate-600" onClick={() => setIsMobileMenuOpen(false)} to="/training/rising">Rising as a Finance Leader™</Link>
-                <Link className="text-sm text-slate-600" onClick={() => setIsMobileMenuOpen(false)} to="/training/fundamentals">Finance Fundamentals for Leaders™</Link>
+            
+            <div className="space-y-6">
+              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary">Strategic Services</span>
+              <div className="flex flex-col space-y-5 pl-4 border-l-4 border-primary/20">
+                  <Link className="text-lg font-black text-on-surface/80" onClick={() => setIsMobileMenuOpen(false)} to="/services/financial-navigation">Financial Navigation</Link>
+                  <Link className="text-lg font-black text-on-surface/80" onClick={() => setIsMobileMenuOpen(false)} to="/services/life-science-advisory">Life Science Advisory</Link>
+                  <Link className="text-lg font-black text-on-surface/80" onClick={() => setIsMobileMenuOpen(false)} to="/services/financial-transformation">Financial Transformation</Link>
+              </div>
             </div>
+
+            <div className="space-y-6">
+              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary">Executive Training</span>
+              <div className="flex flex-col space-y-5 pl-4 border-l-4 border-primary/20">
+                  <Link className="text-lg font-black text-on-surface/80" onClick={() => setIsMobileMenuOpen(false)} to="/training/patients-profitability">Patients & Profitability™</Link>
+                  <Link className="text-lg font-black text-on-surface/80" onClick={() => setIsMobileMenuOpen(false)} to="/training/rising">Rising as a Finance Leader™</Link>
+                  <Link className="text-lg font-black text-on-surface/80" onClick={() => setIsMobileMenuOpen(false)} to="/training/fundamentals">Finance Fundamentals™</Link>
+              </div>
+            </div>
+
+            <div className="flex flex-col space-y-4 pt-4">
+              <Link className="text-2xl font-black uppercase tracking-tight text-on-surface" onClick={() => setIsMobileMenuOpen(false)} to="/ebook">Ebook</Link>
+              <Link className="text-2xl font-black uppercase tracking-tight text-on-surface" onClick={() => setIsMobileMenuOpen(false)} to="/contact">Contact</Link>
+            </div>
+
+            <Link className="w-full bg-primary text-white p-6 rounded-xl font-black uppercase tracking-[0.3em] text-xs text-center shadow-2xl shadow-primary/20" onClick={() => setIsMobileMenuOpen(false)} to="/contact">
+              Schedule Consultation
+            </Link>
           </div>
-          <Link className="text-sm font-bold uppercase tracking-wider text-slate-800" onClick={() => setIsMobileMenuOpen(false)} to="/ebook">Ebook</Link>
-          <Link className="text-sm font-bold uppercase tracking-wider text-slate-800" onClick={() => setIsMobileMenuOpen(false)} to="/contact">Contact</Link>
-          <Link className="text-center bg-primary text-white p-4 rounded-md font-bold uppercase tracking-widest text-sm" onClick={() => setIsMobileMenuOpen(false)} to="/contact">Schedule Consultation</Link>
         </div>
       )}
     </header>

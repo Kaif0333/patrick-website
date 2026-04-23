@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
-
+import SEO from '../components/SEO';
 
 function FinancialNavigation() {
   return (
     <>
+      <SEO 
+        title="Financial Navigation & Fractional CFO" 
+        description="Strategic CFO leadership for CEOs who need a partner in capital strategy, board reporting, and KPI development. Navigate your organization's growth with precision."
+        keywords="fractional CFO, financial navigation, board-level reporting, strategic financial planning, capital allocation advisory"
+      />
       {/*  TopNavBar  */}
 
 <main className="pt-20">

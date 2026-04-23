@@ -1,10 +1,16 @@
 import { Link, useNavigate } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 function Contact() {
   const navigate = useNavigate();
 
   return (
     <>
+      <SEO 
+        title="Contact & Consultation" 
+        description="Schedule a free discovery call with Patrick R. Coyle to discuss your organization's financial navigation, transformation, or life sciences advisory needs."
+        keywords="contact Patrick R. Coyle, book CFO consultation, life sciences advisory inquiry, financial transformation discovery call"
+      />
       {/*  Header Navigation  */}
 
 <main className="pt-20">

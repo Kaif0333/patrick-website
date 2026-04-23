@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
-
+import SEO from '../components/SEO';
 
 function FinancialTransformation() {
   return (
     <>
+      <SEO 
+        title="Financial Transformation & Digital Strategy" 
+        description="Evolve your finance function with modern digital strategy, ERP selection, and process automation. Build an agile finance organization for real-time strategic clarity."
+        keywords="financial transformation, finance digital strategy, ERP system selection, finance process automation, data governance for finance"
+      />
       {/*  Header Navigation  */}
 
 <main>

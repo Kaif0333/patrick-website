@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 function LifeScienceAdvisory() {
   return (
     <>
+      <SEO 
+        title="Life Science Advisory & GTN Optimization" 
+        description="Optimize the intersection of clinical development and commercial success. Specialized advisory in gross-to-net (GTN) strategy, market access, and payer landscape analysis."
+        keywords="life science advisory, gross-to-net optimization, GTN strategy, biotech commercial finance, market access strategy pharma"
+      />
       {/*  TopNavBar  */}
 
 <main className="pt-20">

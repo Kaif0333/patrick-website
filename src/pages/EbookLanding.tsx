@@ -1,10 +1,16 @@
 import { Link, useNavigate } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 function EbookLanding() {
   const navigate = useNavigate();
 
   return (
     <>
+      <SEO 
+        title="Free Executive Ebook: Mastering GTN Strategy" 
+        description="Download your free copy of 'The Chief Financial Navigator's Guide to Gross-to-Net Strategy'. Essential insights for commercial finance leaders in life sciences."
+        keywords="GTN strategy ebook, life sciences finance guide, commercial finance leadership, free biotech finance resources"
+      />
       {/*  TopNavBar  */}
 
 <main className="pt-20">

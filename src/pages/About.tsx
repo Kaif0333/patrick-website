@@ -1,17 +1,23 @@
 import { Link } from 'react-router-dom';
 import SocialSection from '../components/SocialSection';
+import SEO from '../components/SEO';
 
 function About() {
   return (
     <>
+      <SEO 
+        title="About Patrick R. Coyle" 
+        description="Learn about Patrick R. Coyle's 20+ years of executive leadership in clinical finance and life sciences. A veteran CFO and partner at Baker Tilly Advisory."
+        keywords="Patrick R. Coyle biography, clinical finance expert, biotech CFO leadership, Eisai CFO, Baker Tilly Advisory"
+      />
       {/*  Header / TopNavBar  */}
 
 <main className="pt-32">
 {/*  Section 1: Hero  */}
 <section className="pb-32 px-6 max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
 <div className="lg:col-span-5 relative">
-<div className="relative overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl">
-<img alt="Portrait of Patrick R. Coyle" className="w-full h-[640px] object-cover object-top" src="/founder.jpg"/>
+<div className="relative overflow-hidden rounded-sm shadow-2xl">
+<img alt="Portrait of Patrick R. Coyle" className="w-full h-[480px] lg:h-[640px] object-cover object-top" src="/founder.jpg"/>
 </div>
 <div className="absolute -bottom-6 -right-6 bg-primary p-8 hidden lg:block">
 <div className="text-white font-bold text-4xl leading-none">20+</div>

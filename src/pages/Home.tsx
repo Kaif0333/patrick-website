@@ -1,98 +1,193 @@
 import { Link } from 'react-router-dom';
 import SocialGlimpse from '../components/SocialGlimpse';
+import SEO from '../components/SEO';
 
 function Home() {
   return (
     <>
+      <SEO 
+        title="Command Your Financial Future" 
+        description="Precision stewardship and battle-tested advisory for C-suite leaders and Life Sciences innovators. Partner with Patrick R. Coyle, the Chief Financial Navigator."
+        keywords="CFO advisory, life sciences finance, financial navigation, biotech CFO, GTN strategy, Patrick R. Coyle"
+      />
       {/*  TOP NAVIGATION SHELL (Preserved)  */}
 
-<main className="mt-20">
-{/*  SECTION A: HERO (Preserved Exactly)  */}
-<section className="bg-primary-container py-4 md:py-8 relative overflow-hidden">
-<div className="max-w-7xl mx-auto px-8 grid md:grid-cols-12 gap-16 items-center">
-<div className="md:col-span-7 z-10">
-<span className="inline-block label-md uppercase tracking-[0.2em] text-on-primary/60 font-semibold mb-6">
-                    Chief Financial Navigator | Strategic Executive
-                </span>
-<h1 className="text-2xl md:text-4xl font-light tracking-tighter leading-[1.1] text-on-primary mb-4">
-                    Navigating <span className="font-extrabold text-white">Financial Complexity</span>. <br className="hidden md:block" />
-                    Delivering <span className="font-extrabold text-white border-b-4 border-primary-fixed/30 inline-block pb-0.5">Measurable Outcomes</span>.
-                </h1>
-<p className="text-sm md:text-base text-on-primary/80 max-w-md font-light mb-6 leading-relaxed">
-                    Helping CEOs, CFOs, and life sciences leaders make smarter financial decisions with precision and clinical authority.
-                </p>
-<div className="flex flex-wrap gap-4 mb-8">
-<Link to="/contact" className="bg-surface-container-lowest text-primary px-6 py-3 rounded-md font-bold transition-all hover:bg-surface-container-high text-sm md:text-base">
-                        Schedule a Consultation
-                    </Link>
-<Link to="/ebook" className="border-2 border-on-primary text-on-primary px-6 py-3 rounded-md font-bold transition-all hover:bg-on-primary/10 text-sm md:text-base">
-                        Download Free Ebook
-                    </Link>
+<main className="mt-16">
+{/*  SECTION A: HERO */}
+<section className="bg-primary py-8 relative overflow-hidden">
+<div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
+<div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-white rounded-full blur-[150px] -translate-y-1/2 translate-x-1/4"></div>
+</div>
+<div className="max-w-7xl mx-auto px-8 grid md:grid-cols-12 gap-12 items-center relative z-10">
+<div className="md:col-span-7">
+<div className="inline-flex items-center px-4 py-1.5 rounded bg-white/10 text-white text-[10px] font-black uppercase tracking-[0.4em] mb-8 border border-white/20 backdrop-blur-md">
+    CHIEF FINANCIAL NAVIGATOR
+</div>
+<h1 className="text-5xl md:text-6xl font-black tracking-tighter text-white mb-4 leading-[1.05]">
+    Command Your <br/>
+<span className="text-primary-fixed-dim">Financial Future.</span>
+</h1>
+<p className="text-xl md:text-2xl text-white max-w-xl font-black mb-6 leading-relaxed opacity-90">
+    Precision stewardship and battle-tested advisory for C-suite leaders and Life Sciences innovators.
+</p>
+<div className="flex flex-col sm:flex-row gap-6">
+<Link to="/contact" className="bg-white text-primary px-12 py-6 rounded-md font-black text-sm uppercase tracking-widest shadow-2xl shadow-black/20 hover:bg-slate-50 active:scale-95 transition-all text-center">
+    Book Consultation
+</Link>
+<Link to="/ebook" className="bg-transparent border-2 border-white text-white px-12 py-6 rounded-md font-black text-sm uppercase tracking-widest hover:bg-white/10 active:scale-95 transition-all text-center">
+    Executive Ebook
+</Link>
 </div>
 </div>
-<div className="md:col-span-5 relative">
-<div className="relative z-10 rounded-xl overflow-hidden border-[6px] border-white/10 aspect-[4/5] shadow-xl max-w-[240px] mx-auto md:ml-auto">
-<img alt="" className="w-full h-full object-cover" data-alt="professional portrait of a distinguished man in his 50s" src="/founder.jpg"/>
+<div className="md:col-span-4 md:col-start-9 relative max-w-sm mx-auto md:max-w-none md:mx-0">
+<div className="relative z-10 rounded-2xl overflow-hidden border-[8px] border-white/10 aspect-square shadow-2xl">
+<img alt="Patrick R. Coyle" className="w-full h-full object-cover" src="/founder.jpg"/>
 </div>
-<div className="absolute -bottom-10 -right-10 w-48 h-48 bg-primary rounded-full blur-3xl opacity-30 -z-0"></div>
+<div className="absolute -bottom-10 -right-10 w-64 h-64 bg-white/20 rounded-full blur-3xl -z-10"></div>
 </div>
 </div>
 </section>
-{/*  SECTION B2: TRUSTED BY LEADERS AT  */}
-<section className="relative py-24 overflow-hidden bg-surface-container-low">
-{/* Subtle topographical background */}
-<div className="absolute inset-0 topo-pattern pointer-events-none"></div>
+
+{/*  SECTION: STRATEGIC SOLUTIONS (Below Hero) - CLEAN EXECUTIVE LIGHT THEME */}
+<section className="py-20 bg-surface-container-lowest relative">
+{/* Subtle decorative grid background */}
+<div className="absolute inset-0 bg-grid opacity-[0.03] pointer-events-none"></div>
+
 <div className="max-w-7xl mx-auto px-8 relative z-10">
-<div className="text-center mb-16 space-y-4">
-<h2 className="text-[10px] uppercase tracking-[0.2em] text-outline font-bold">Validation</h2>
-<p className="text-3xl md:text-4xl font-bold tracking-tight text-on-surface">Trusted by Leaders At</p>
-<p className="text-on-surface-variant max-w-2xl mx-auto font-light">Patrick has held roles of increasing responsibility at global corporations spanning strategic planning, market access, and corporate investment.</p>
+<div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-24 gap-12">
+<div className="max-w-3xl">
+<span className="text-[10px] font-black uppercase tracking-[0.5em] text-primary mb-6 block">The Academy of Navigation</span>
+<h2 className="text-5xl md:text-7xl font-black tracking-tight text-on-surface leading-[1.1]">
+            Strategic <br/>
+<span className="text-primary">Financial Solutions.</span>
+</h2>
 </div>
-{/* Logo Grid */}
-<div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-surface-variant/30 border border-surface-variant/30 rounded-xl overflow-hidden shadow-[0_40px_40px_0_rgba(31,62,146,0.06)]">
-{/* Eisai */}
-<div className="group bg-surface-container-lowest p-8 flex items-center justify-center transition-all duration-200 hover:bg-surface-bright">
-<img src="/images/logos/eisai.png" alt="Eisai" className="h-12 md:h-16 object-contain transition-transform duration-200 group-hover:scale-105 opacity-80 group-hover:opacity-100" />
-</div>
-{/* Baker Tilly */}
-<div className="group bg-surface-container-lowest p-8 flex items-center justify-center transition-all duration-200 hover:bg-surface-bright">
-<img src="/images/logos/bakertilly.jpg" alt="Baker Tilly" className="h-10 md:h-14 object-contain transition-transform duration-200 group-hover:scale-105 opacity-80 group-hover:opacity-100" />
-</div>
-{/* IQVIA */}
-<div className="group bg-surface-container-lowest p-8 flex items-center justify-center transition-all duration-200 hover:bg-surface-bright">
-<img src="/images/logos/iqvia.jpg" alt="IQVIA" className="h-10 md:h-14 object-contain transition-transform duration-200 group-hover:scale-105 opacity-80 group-hover:opacity-100" />
-</div>
-{/* Deloitte */}
-<div className="group bg-surface-container-lowest p-8 flex items-center justify-center transition-all duration-200 hover:bg-surface-bright">
-<img src="/images/logos/deloitte.png" alt="Deloitte" className="h-10 md:h-14 object-contain transition-transform duration-200 group-hover:scale-105 opacity-80 group-hover:opacity-100" />
-</div>
-{/* Novartis */}
-<div className="group bg-surface-container-lowest p-8 flex items-center justify-center transition-all duration-200 hover:bg-surface-bright">
-<img src="/images/logos/novartis.png" alt="Novartis" className="h-10 md:h-14 object-contain transition-transform duration-200 group-hover:scale-105 opacity-80 group-hover:opacity-100" />
-</div>
-{/* Sun Chemical */}
-<div className="group bg-surface-container-lowest p-8 flex items-center justify-center transition-all duration-200 hover:bg-surface-bright">
-<img src="/images/logos/sunchemical.png" alt="Sun Chemical" className="h-10 md:h-14 object-contain transition-transform duration-200 group-hover:scale-105 opacity-80 group-hover:opacity-100" />
-</div>
-{/* Insmed */}
-<div className="group bg-surface-container-lowest p-8 flex items-center justify-center transition-all duration-200 hover:bg-surface-bright">
-<img src="/images/logos/insmed.png" alt="Insmed" className="h-10 md:h-14 object-contain transition-transform duration-200 group-hover:scale-105 opacity-80 group-hover:opacity-100" />
-</div>
-{/* Bayer */}
-<div className="group bg-surface-container-lowest p-8 flex items-center justify-center transition-all duration-200 hover:bg-surface-bright">
-<img src="/images/logos/bayer.png" alt="Bayer" className="h-12 md:h-16 object-contain transition-transform duration-200 group-hover:scale-105 opacity-80 group-hover:opacity-100" />
+<div className="max-w-sm">
+<p className="text-on-surface font-black text-sm uppercase tracking-widest leading-relaxed mb-8 opacity-60">
+            Precision stewardship for clinical innovation and institutional evolution.
+        </p>
+<Link to="/contact" className="inline-flex items-center gap-4 text-primary font-black text-xs uppercase tracking-[0.3em] hover:gap-6 transition-all group">
+            Inquire for Consultation <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform font-black">east</span>
+        </Link>
 </div>
 </div>
-<div className="mt-16 flex justify-center">
-<div className="flex items-center gap-4 py-3 px-6 rounded-full bg-surface-container border border-outline-variant/20">
-<span className="w-2 h-2 rounded-full bg-tertiary"></span>
-<p className="text-sm font-medium text-on-surface-variant">Strategic Advisory for Global Healthcare Innovation</p>
+
+<div className="grid lg:grid-cols-3 gap-12">
+{[
+{ 
+        title: 'Financial Navigation', 
+        tagline: 'Capital Strategy',
+        desc: 'Navigating complex commercial landscapes through high-stakes capital planning and battle-tested board reporting.',
+        icon: 'explore',
+        link: '/services/financial-navigation'
+    },
+{ 
+        title: 'Life Science Advisory', 
+        tagline: 'Clinical ROI',
+        desc: 'Optimizing the intersection of clinical development and commercial success with precision GTN strategy.',
+        icon: 'biotech',
+        link: '/services/life-science-advisory'
+    },
+{ 
+        title: 'Financial Transformation', 
+        tagline: 'Org Agility',
+        desc: 'Architecting modern finance functions that deliver real-time strategic clarity for global leadership teams.',
+        icon: 'rebase_edit',
+        link: '/services/financial-transformation'
+    }
+].map((service, index) => (
+<div 
+        key={index} 
+        className="group relative p-12 rounded-3xl bg-white border-2 border-outline/5 hover:border-primary/20 transition-all duration-500 flex flex-col justify-between min-h-[480px] shadow-2xl shadow-primary/5 hover:shadow-primary/10 hover:-translate-y-2"
+    >
+<div>
+<div className="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center mb-10 group-hover:bg-primary transition-all duration-500">
+<span className="material-symbols-outlined text-primary text-3xl font-black group-hover:text-white transition-colors">{service.icon}</span>
+</div>
+<span className="text-[9px] font-black uppercase tracking-[0.4em] text-primary mb-3 block">{service.tagline}</span>
+<h3 className="text-3xl font-black mb-6 text-on-surface uppercase tracking-tight leading-none">
+            {service.title}
+        </h3>
+<p className="text-on-surface font-black text-sm leading-relaxed mb-10 opacity-70">
+            {service.desc}
+        </p>
+</div>
+
+<Link 
+        to="/contact" 
+        className="w-full py-5 rounded-xl bg-on-surface text-white font-black text-[10px] uppercase tracking-[0.2em] text-center shadow-xl shadow-on-surface/10 hover:bg-primary transition-all duration-500"
+    >
+        Schedule Executive Briefing
+    </Link>
+</div>
+))}
+</div>
+</div>
+</section>
+
+{/*  SECTION B2: TRUSTED BY LEADERS AT  */}
+<section className="relative py-20 overflow-hidden bg-white border-y-2 border-outline/5">
+{/* Subtle background decorative elements */}
+<div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+<div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+
+<div className="max-w-7xl mx-auto px-8 relative z-10">
+<div className="text-center mb-24">
+<span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary mb-4 block">Institutional Trust</span>
+<h2 className="text-4xl md:text-5xl font-black tracking-tight text-on-surface mb-6">Validated Industry Expertise</h2>
+<p className="text-lg text-on-surface font-black max-w-2xl mx-auto opacity-70 leading-relaxed">
+    Patrick has delivered strategic value for global pharmaceutical leaders and elite advisory firms, bridging the gap between clinical innovation and fiscal stewardship.
+</p>
+</div>
+
+{/* Infinite Logo Slider */}
+<div className="relative w-full overflow-hidden">
+{/* Fading gradients on the edges for a smoother look */}
+<div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-white to-transparent z-20 pointer-events-none"></div>
+<div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none"></div>
+
+<div className="flex w-fit animate-marquee hover:[animation-play-state:paused] py-4">
+{/* First set of logos */}
+{[
+{ name: 'Eisai', src: '/images/logos/eisai.png' },
+{ name: 'Baker Tilly', src: '/images/logos/bakertilly.jpg' },
+{ name: 'IQVIA', src: '/images/logos/iqvia.jpg' },
+{ name: 'Deloitte', src: '/images/logos/deloitte.png' },
+{ name: 'Novartis', src: '/images/logos/novartis.png' },
+{ name: 'Sun Chemical', src: '/images/logos/sunchemical.png' },
+{ name: 'Insmed', src: '/images/logos/insmed.png' },
+{ name: 'Bayer', src: '/images/logos/bayer.png' }
+].concat([
+{ name: 'Eisai', src: '/images/logos/eisai.png' },
+{ name: 'Baker Tilly', src: '/images/logos/bakertilly.jpg' },
+{ name: 'IQVIA', src: '/images/logos/iqvia.jpg' },
+{ name: 'Deloitte', src: '/images/logos/deloitte.png' },
+{ name: 'Novartis', src: '/images/logos/novartis.png' },
+{ name: 'Sun Chemical', src: '/images/logos/sunchemical.png' },
+{ name: 'Insmed', src: '/images/logos/insmed.png' },
+{ name: 'Bayer', src: '/images/logos/bayer.png' }
+]).map((logo, index) => (
+<div key={index} className="flex-shrink-0 mx-4 w-48 md:w-64 h-32 md:h-40 bg-surface-container-low border-2 border-outline/5 rounded-2xl flex items-center justify-center p-8 transition-all hover:bg-white hover:border-primary/20 hover:shadow-2xl hover:shadow-primary/5 group cursor-default">
+<img 
+                            src={logo.src} 
+                            alt={logo.name} 
+                            className="w-full h-full object-contain transition-all duration-500 group-hover:scale-110" 
+                        />
+</div>
+))}
+</div>
+</div>
+
+<div className="mt-24 flex justify-center">
+<div className="inline-flex items-center gap-4 py-4 px-8 rounded-full bg-surface-container-low border-2 border-outline/5 shadow-xl shadow-outline/5">
+<span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<p className="text-xs font-black text-on-surface uppercase tracking-widest">Global Healthcare Innovation Advisory</p>
 </div>
 </div>
 </div>
 </section>
 {/*  SECTION C: SIX WAYS I CREATE VALUE (Redesigned)  */}
-<section className="py-32 px-8 bg-white overflow-hidden">
+<section className="py-20 px-8 bg-white overflow-hidden">
 <div className="max-w-7xl mx-auto">
 <div className="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
 <div className="max-w-3xl">
@@ -101,55 +196,28 @@ function Home() {
 </div>
 <p className="text-on-surface-variant font-light text-lg max-w-sm">Driving institutional evolution through clinical precision and executive stewardship.</p>
 </div>
-<div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-px bg-outline-variant/30 border border-outline-variant/30 rounded-2xl overflow-hidden shadow-sm">
-{/*  Grid Items with Asymmetric Feel  */}
-<div className="md:col-span-3 lg:col-span-4 bg-white p-10 hover:bg-surface-container-lowest transition-colors group">
-<div className="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
-<span className="material-symbols-outlined text-2xl" data-weight="fill">transform</span>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+{[
+{ icon: 'transform', title: 'Change Agent', desc: 'Driving structural evolution to adapt your finance organization to shifting market realities.' },
+{ icon: 'shield_person', title: 'Sovereign Guardian', desc: 'Meticulous stewardship of capital and risk to ensure long-term clinical and fiscal sustainability.' },
+{ icon: 'auto_stories', title: 'Financial Narrator', desc: 'Translating complex financial data into compelling stories that win board and investor confidence.' },
+{ icon: 'handshake', title: 'Business Partner', desc: 'Aligning finance operations with R&D and Commercial goals for unified strategic execution.' },
+{ icon: 'hub', title: 'Executive Facilitator', desc: 'Streamlining decision-making processes across global executive teams and stakeholders.' },
+{ icon: 'school', title: 'Strategic Mentor', desc: 'Cultivating the next generation of finance leaders through structured executive training.' }
+].map((item, i) => (
+<div key={i} className="p-10 border-2 border-outline/5 rounded-2xl hover:border-primary/20 transition-all group bg-surface-container-low shadow-xl shadow-outline/5">
+<div className="w-14 h-14 bg-primary text-white rounded-lg flex items-center justify-center mb-8 group-hover:scale-110 transition-transform shadow-lg shadow-primary/20">
+<span className="material-symbols-outlined font-black text-3xl">{item.icon}</span>
 </div>
-<h3 className="text-xl font-bold mb-4 tracking-tight">Change Agent</h3>
-<p className="text-on-surface-variant leading-relaxed text-sm font-light">Driving structural evolution to adapt your finance organization to shifting market realities with precision.</p>
+<h3 className="text-xl font-black mb-4 text-on-surface uppercase tracking-tight">{item.title}</h3>
+<p className="text-on-surface font-black text-sm leading-relaxed opacity-70">{item.desc}</p>
 </div>
-<div className="md:col-span-3 lg:col-span-4 bg-white p-10 hover:bg-surface-container-lowest transition-colors group">
-<div className="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
-<span className="material-symbols-outlined text-2xl" data-weight="fill">shield_person</span>
-</div>
-<h3 className="text-xl font-bold mb-4 tracking-tight">Sovereign Guardian</h3>
-<p className="text-on-surface-variant leading-relaxed text-sm font-light">Meticulous stewardship of capital and risk to ensure long-term clinical and fiscal sustainability.</p>
-</div>
-<div className="md:col-span-3 lg:col-span-4 bg-white p-10 hover:bg-surface-container-lowest transition-colors group">
-<div className="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
-<span className="material-symbols-outlined text-2xl" data-weight="fill">auto_stories</span>
-</div>
-<h3 className="text-xl font-bold mb-4 tracking-tight">Financial Narrator</h3>
-<p className="text-on-surface-variant leading-relaxed text-sm font-light">Translating complex financial data into compelling stories that win board and investor confidence.</p>
-</div>
-<div className="md:col-span-3 lg:col-span-4 bg-white p-10 hover:bg-surface-container-lowest transition-colors group">
-<div className="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
-<span className="material-symbols-outlined text-2xl" data-weight="fill">handshake</span>
-</div>
-<h3 className="text-xl font-bold mb-4 tracking-tight">Business Partner</h3>
-<p className="text-on-surface-variant leading-relaxed text-sm font-light">Aligning finance operations with R&amp;D and Commercial goals for unified strategic execution.</p>
-</div>
-<div className="md:col-span-3 lg:col-span-4 bg-white p-10 hover:bg-surface-container-lowest transition-colors group">
-<div className="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
-<span className="material-symbols-outlined text-2xl" data-weight="fill">hub</span>
-</div>
-<h3 className="text-xl font-bold mb-4 tracking-tight">Executive Facilitator</h3>
-<p className="text-on-surface-variant leading-relaxed text-sm font-light">Streamlining decision-making processes across global executive teams and stakeholders.</p>
-</div>
-<div className="md:col-span-3 lg:col-span-4 bg-white p-10 hover:bg-surface-container-lowest transition-colors group">
-<div className="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
-<span className="material-symbols-outlined text-2xl" data-weight="fill">school</span>
-</div>
-<h3 className="text-xl font-bold mb-4 tracking-tight">Strategic Mentor</h3>
-<p className="text-on-surface-variant leading-relaxed text-sm font-light">Cultivating the next generation of finance leaders through structured executive training.</p>
-</div>
+))}
 </div>
 </div>
 </section>
 {/*  SECTION D: HOW I CAN HELP YOU (Redesigned)  */}
-<section className="py-32 px-8 bg-slate-50 border-y border-outline-variant/20">
+<section className="py-20 px-8 bg-white border-y border-outline-variant/20">
 <div className="max-w-7xl mx-auto">
 <div className="text-center mb-24">
 <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-on-surface uppercase mb-4">Advisory Pillars</h2>
@@ -232,7 +300,7 @@ function Home() {
 </div>
 </section>
 {/*  SECTION E: WHAT LEADERS SAY (Redesigned)  */}
-<section className="py-32 px-8 bg-white">
+<section className="py-20 px-8 bg-white">
 <div className="max-w-7xl mx-auto">
 <div className="flex flex-col md:flex-row justify-between items-baseline mb-20">
 <h2 className="text-4xl md:text-5xl font-black tracking-tight text-on-surface">Executive Testimony</h2>
@@ -276,7 +344,7 @@ function Home() {
 </div>
 </section>
 {/*  SECTION F: EBOOK FEATURE (Refined Integrated Layout)  */}
-<section className="py-32 px-8 bg-surface-container-low">
+<section className="py-20 px-8 bg-surface-container-low">
 <div className="max-w-7xl mx-auto">
 <div className="bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col lg:flex-row items-stretch border border-outline-variant/20">
 <div className="lg:w-2/5 relative">
@@ -313,7 +381,7 @@ function Home() {
 </div>
 </section>
 {/*  SECTION G: TRAINING HIGHLIGHT (High-Value Refinement)  */}
-<section className="py-32 px-8 bg-primary-container relative">
+<section className="py-20 px-8 bg-primary-container relative">
 <div className="max-w-7xl mx-auto">
 <div className="flex flex-col md:flex-row justify-between items-start mb-24 gap-12">
 <div className="max-w-3xl">

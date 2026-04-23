@@ -1,8 +1,14 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 function Training() {
   return (
     <>
+      <SEO 
+        title="Executive Finance Training & Workshops" 
+        description="Upskill your finance and commercial teams with specialized training in gross-to-net strategy, leadership development, and finance fundamentals for life sciences."
+        keywords="finance leadership training, GTN workshops, biotech finance executive training, finance fundamentals for leaders"
+      />
       {/*  TopNavBar  */}
 
 <main className="pt-20">

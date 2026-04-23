@@ -1,37 +1,43 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 function Services() {
   return (
     <>
+      <SEO 
+        title="Strategic Finance Leadership & Advisory" 
+        description="Comprehensive fractional CFO, life sciences advisory, and financial transformation services tailored for emerging and global pharmaceutical leaders."
+        keywords="fractional CFO services, life sciences advisory, financial transformation, gross-to-net optimization, biotech financial leadership"
+      />
       {/*  Header (Shared Component)  */}
 
 <main className="pt-20">
 {/*  Section 1: Hero  */}
-<section className="relative overflow-hidden py-24 md:py-32 flex flex-col items-center text-center px-6">
-<div className="absolute inset-0 hero-pattern -z-10"></div>
+<section className="relative overflow-hidden py-20 flex flex-col items-center text-center px-8">
+<div className="absolute inset-0 hero-pattern -z-10 opacity-40"></div>
 <div className="max-w-4xl mx-auto">
-<span className="text-primary-container font-bold text-xs uppercase tracking-widest mb-6 block">ADVISORY SERVICES</span>
-<h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-8 leading-tight">
+<span className="text-primary font-black text-[10px] uppercase tracking-[0.5em] mb-6 block">The Academy of Advisory</span>
+<h1 className="text-4xl md:text-6xl font-black tracking-tight text-on-surface mb-8 leading-[1.1]">
                     Strategic Finance Leadership <br className="hidden md:block"/> When It Matters Most
                 </h1>
-<p className="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mb-12 leading-relaxed">
-                    Whether you need fractional CFO support, life sciences expertise, or enterprise transformation — Patrick brings senior-level financial leadership tailored to your needs.
+<p className="text-lg md:text-xl text-on-surface font-black max-w-2xl mx-auto mb-12 leading-relaxed opacity-70">
+                    Precision stewardship tailored for clinical innovation and institutional evolution. Patrick brings senior-level financial leadership to every engagement.
                 </p>
-<div className="flex flex-col sm:flex-row gap-4 justify-center">
-<Link to="/contact" className="bg-primary-container text-on-primary px-8 py-4 rounded-md font-semibold text-base shadow-lg hover:brightness-110 transition-all">
+<div className="flex flex-col sm:flex-row gap-6 justify-center">
+<Link to="/contact" className="bg-primary text-white px-10 py-5 rounded-md font-black text-sm uppercase tracking-widest shadow-xl shadow-primary/20 hover:brightness-110 transition-all">
                         Schedule a Consultation
                     </Link>
-<Link to="/about" className="border border-outline-variant text-primary px-8 py-4 rounded-md font-semibold text-base hover:bg-surface-container-low transition-all">
-                        Learn About My Process
+<Link to="/about" className="border-2 border-outline text-on-surface px-10 py-5 rounded-md font-black text-sm uppercase tracking-widest hover:bg-surface-container-low transition-all">
+                        Executive Process
                     </Link>
 </div>
 </div>
 </section>
 {/*  Section 2: Service Cards  */}
-<section className="bg-surface-container-low py-24 px-6">
+<section className="bg-surface-container-lowest py-20 px-8">
 <div className="max-w-7xl mx-auto">
-<h2 className="text-3xl md:text-4xl font-bold text-center text-on-surface mb-16">How I Serve Your Organization</h2>
-<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<h2 className="text-3xl md:text-5xl font-black text-center text-on-surface mb-16 uppercase tracking-tight">Expertise Domains</h2>
+<div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 {/*  Card 1  */}
 <div className="bg-white p-10 rounded-xl shadow-[0_40px_60px_-15px_rgba(31,62,146,0.06)] flex flex-col h-full border border-surface-variant/30 hover:-translate-y-1 transition-transform duration-300">
 <div className="w-14 h-14 bg-surface-container rounded-lg flex items-center justify-center mb-8">
