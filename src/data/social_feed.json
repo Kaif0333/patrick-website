@@ -1,0 +1,28 @@
+{
+  "linkedin": [
+    {
+      "id": 1,
+      "author": "Patrick R. Coyle",
+      "role": "Managing Director at Baker Tilly US",
+      "time": "2d ago",
+      "content": "Protecting pharma profitability in a high-access world requires clinical precision in finance. Gross-to-Net (GTN) isn't just a subtraction—it's a strategic calculation. #GTN #PharmaFinance #Strategy",
+      "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop",
+      "videoUrl": "",
+      "postUrl": "https://www.linkedin.com/in/pcoyle/"
+    },
+    {
+      "id": 2,
+      "author": "Patrick R. Coyle",
+      "role": "Managing Director at Baker Tilly US",
+      "time": "1w ago",
+      "content": "Great discussion last week on commercial launch readiness. One key takeaway: The finance team must be the 'Navigator'—not just tracking spend, but charting the course to launch success. #LifeSciences #CFO #ExecutiveLeadership",
+      "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop",
+      "videoUrl": "",
+      "postUrl": "https://www.linkedin.com/in/pcoyle/"
+    }
+  ],
+  "youtube_overrides": {
+    "enabled": false,
+    "videos": []
+  }
+}
