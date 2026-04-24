@@ -25,8 +25,9 @@ function Home() {
 </div>
 <h1 className="text-5xl md:text-6xl font-black tracking-tighter text-white mb-4 leading-[1.05]">
     Command Your <br/>
-<span className="text-primary-fixed-dim">Financial Future.</span>
+    <span className="text-primary-fixed-dim">Financial Future.</span>
 </h1>
+<div className="nano-accent mb-8 bg-white/40"></div>
 <p className="text-xl md:text-2xl text-white max-w-xl font-black mb-6 leading-relaxed opacity-90">
     Precision stewardship and battle-tested advisory for C-suite leaders and Life Sciences innovators.
 </p>
@@ -39,11 +40,11 @@ function Home() {
 </Link>
 </div>
 </div>
-<div className="md:col-span-4 md:col-start-9 relative max-w-sm mx-auto md:max-w-none md:mx-0">
-<div className="relative z-10 rounded-2xl overflow-hidden border-[8px] border-white/10 aspect-square shadow-2xl">
-<img alt="Patrick R. Coyle" className="w-full h-full object-cover" src="/founder.jpg"/>
+<div className="md:col-span-4 md:col-start-9 relative max-w-[360px] mx-auto md:mx-0 translate-x-[10px]">
+<div className="relative z-10 rounded-2xl overflow-hidden border-[8px] border-white/10 aspect-square shadow-2xl bg-surface-container">
+<img alt="Patrick R. Coyle" className="w-full h-full object-cover" src="/founder-hero.png"/>
 </div>
-<div className="absolute -bottom-10 -right-10 w-64 h-64 bg-white/20 rounded-full blur-3xl -z-10"></div>
+<div className="absolute -bottom-8 -right-8 w-64 h-64 bg-white/20 rounded-full blur-3xl -z-10"></div>
 </div>
 </div>
 </section>
@@ -243,7 +244,7 @@ function Home() {
 <p className="text-sm font-medium">M&amp;A financial due diligence and integration.</p>
 </div>
 </div>
-<Link className="inline-flex items-center gap-2 font-bold text-primary group-hover:gap-4 transition-all" to="/services/life-science-advisory">
+<Link className="inline-flex items-center gap-2 font-bold text-primary group-hover:gap-4 transition-all" to="/services/financial-navigation">
                             Inquire for Advisory <span className="material-symbols-outlined">east</span>
 </Link>
 </div>
@@ -291,7 +292,7 @@ function Home() {
 <p className="text-sm font-medium">Talent development and high-potential leadership training.</p>
 </div>
 </div>
-<Link className="inline-flex items-center gap-2 font-bold text-primary group-hover:gap-4 transition-all" to="/services/life-science-advisory">
+<Link className="inline-flex items-center gap-2 font-bold text-primary group-hover:gap-4 transition-all" to="/services/financial-transformation">
                             Inquire for Advisory <span className="material-symbols-outlined">east</span>
 </Link>
 </div>
@@ -344,36 +345,36 @@ function Home() {
 </div>
 </section>
 {/*  SECTION F: EBOOK FEATURE (Refined Integrated Layout)  */}
-<section className="py-20 px-8 bg-surface-container-low">
+<section className="py-12 px-8 bg-surface-container-low">
 <div className="max-w-7xl mx-auto">
 <div className="bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col lg:flex-row items-stretch border border-outline-variant/20">
-<div className="lg:w-2/5 relative">
+<div className="lg:w-1/3 relative min-h-[300px]">
 <img alt="" className="w-full h-full object-cover" data-alt="professional ebook cover design with a deep blue background titled Why Pharma Funds Access But Does Not Control It" src="/images/img_14.jpg"/>
 <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
 </div>
-<div className="lg:w-3/5 p-12 md:p-20 flex flex-col justify-center">
-<span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary mb-6">Executive Insight Series</span>
-<h3 className="text-3xl md:text-5xl font-black mb-8 tracking-tighter leading-tight">Why Pharma Funds Access But Doesn't Control It</h3>
-<p className="text-lg text-on-surface-variant mb-12 font-light leading-relaxed">Critical insights for commercial leaders on navigating the complex intersection of patient access and profitability in the modern healthcare ecosystem.</p>
-<div className="grid md:grid-cols-2 gap-8 mb-12">
-<div className="flex items-start gap-4">
-<span className="material-symbols-outlined text-primary shrink-0">analytics</span>
+<div className="lg:w-2/3 p-8 md:p-12 flex flex-col justify-center">
+<span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary mb-4">Executive Insight Series</span>
+<h3 className="text-2xl md:text-4xl font-black mb-4 tracking-tighter leading-tight">Why Pharma Funds Access But Doesn't Control It</h3>
+<p className="text-base text-on-surface-variant mb-8 font-light leading-relaxed">Critical insights for commercial leaders on navigating the complex intersection of patient access and profitability in the modern healthcare ecosystem.</p>
+<div className="grid md:grid-cols-2 gap-6 mb-8">
+<div className="flex items-start gap-3">
+<span className="material-symbols-outlined text-primary shrink-0 text-xl">analytics</span>
 <div>
 <h4 className="text-sm font-bold mb-1">Hidden Leakage</h4>
-<p className="text-xs text-on-surface-variant leading-relaxed">Identifying vulnerabilities in patient support systems.</p>
+<p className="text-[10px] text-on-surface-variant leading-relaxed">Identifying vulnerabilities in patient support systems.</p>
 </div>
 </div>
-<div className="flex items-start gap-4">
-<span className="material-symbols-outlined text-primary shrink-0">account_balance_wallet</span>
+<div className="flex items-start gap-3">
+<span className="material-symbols-outlined text-primary shrink-0 text-xl">account_balance_wallet</span>
 <div>
 <h4 className="text-sm font-bold mb-1">Financial Control</h4>
-<p className="text-xs text-on-surface-variant leading-relaxed">Strategies for post-launch fiscal sovereignty.</p>
+<p className="text-[10px] text-on-surface-variant leading-relaxed">Strategies for post-launch fiscal sovereignty.</p>
 </div>
 </div>
 </div>
 <div className="flex flex-wrap gap-6">
-<Link to="/ebook" className="bg-primary-container text-on-primary px-10 py-5 rounded-md font-bold uppercase tracking-widest hover:opacity-90 transition-all flex items-center gap-3">
-                            Download PDF <span className="material-symbols-outlined text-lg">download</span>
+<Link to="/ebook" className="bg-primary-container text-on-primary px-8 py-4 rounded-md font-bold uppercase tracking-widest text-xs hover:opacity-90 transition-all flex items-center gap-3">
+                            Download PDF <span className="material-symbols-outlined text-base">download</span>
 </Link>
 </div>
 </div>

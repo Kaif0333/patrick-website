@@ -201,13 +201,14 @@ function TrainingPatientsProfitability() {
 <div className="relative">
 <div className="absolute -top-6 -left-6 w-32 h-32 border-t-4 border-l-4 border-primary-container/10"></div>
 <div className="overflow-hidden rounded-2xl shadow-2xl aspect-[4/5] bg-surface-variant">
-<img className="w-full h-full object-cover" data-alt="Professional portrait of a male executive in a navy suit, reflecting confidence and approachability" src="/founder.jpg" />
+<img className="w-full h-full object-cover" data-alt="Professional portrait" src="/founder-v2.jpg" />
 </div>
-<div className="absolute -bottom-6 -right-6 w-32 h-32 border-b-4 border-r-4 border-primary-container/10"></div>
+<div className="absolute -bottom-6 -right-6 w-32 h-32 border-b-4 border-r-4 border-banana/20"></div>
 </div>
 <div>
+<div className="nano-banana mb-4"></div>
 <span className="text-[10px] font-bold uppercase tracking-widest text-primary mb-4 block">Executive Stewardship</span>
-<h3 className="text-4xl font-extrabold text-on-surface mb-8 tracking-tight">Meet Your Trainer</h3>
+<h3 className="text-4xl font-black text-on-surface mb-8 tracking-tight">Meet Your Trainer</h3>
 <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed mb-10">
 <p>
                                 Patrick R. Coyle is a seasoned biotech executive who has spent over two decades navigating the intersection of clinical success and financial sustainability. His career spans leadership roles in some of the most innovative life sciences organizations in the world.

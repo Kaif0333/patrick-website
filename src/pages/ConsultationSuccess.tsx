@@ -10,7 +10,7 @@ export default function ConsultationSuccess() {
           <p className="text-sm font-bold">Patrick R. Coyle</p>
         </div>
         <div className="w-12 h-12 rounded-xl overflow-hidden border-2 border-primary/10">
-          <img src="/founder.jpg" alt="Patrick R. Coyle" className="w-full h-full object-cover" />
+          <img src="/founder-v2.jpg" alt="Patrick R. Coyle" className="w-full h-full object-cover" />
         </div>
       </div>
 
@@ -24,6 +24,7 @@ export default function ConsultationSuccess() {
           <h1 className="text-4xl md:text-6xl font-black tracking-tighter text-on-surface mb-6">
             Congratulations
           </h1>
+          <div className="nano-accent mx-auto mb-8"></div>
           <p className="text-xl text-on-surface-variant font-light leading-relaxed max-w-2xl mx-auto mb-16">
             Your consultation request has been successfully registered. We will navigate your next strategic steps together. 
             <br className="hidden md:block" /> Expect a personal outreach within 1-2 business days.
@@ -52,11 +53,11 @@ export default function ConsultationSuccess() {
             {/* Direct Download Button */}
             <a 
               href="/ebook.pdf" 
-              download
-              className="group bg-white border-2 border-primary/10 text-primary p-6 rounded-2xl hover:bg-slate-50 transition-all hover:-translate-y-1 flex flex-col items-center gap-3"
+              download="Profits-Profitability-Ebook.pdf"
+              className="group bg-white border-2 border-primary/10 text-on-surface p-6 rounded-2xl hover:bg-slate-50 transition-all hover:-translate-y-1 flex flex-col items-center gap-3"
             >
               <span className="material-symbols-outlined text-2xl">download</span>
-              <span className="text-xs font-black uppercase tracking-widest">Download Ebook</span>
+              <span className="text-xs font-black uppercase tracking-widest text-primary">Download Ebook</span>
             </a>
           </div>
         </div>

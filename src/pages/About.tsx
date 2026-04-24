@@ -17,7 +17,7 @@ function About() {
 <section className="pb-32 px-6 max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
 <div className="lg:col-span-5 relative">
 <div className="relative overflow-hidden rounded-sm shadow-2xl">
-<img alt="Portrait of Patrick R. Coyle" className="w-full h-[480px] lg:h-[640px] object-cover object-top" src="/founder.jpg"/>
+<img alt="Portrait of Patrick R. Coyle" className="w-full h-[480px] lg:h-[640px] object-cover object-top" src="/founder-v2.jpg"/>
 </div>
 <div className="absolute -bottom-6 -right-6 bg-primary p-8 hidden lg:block">
 <div className="text-white font-bold text-4xl leading-none">20+</div>
@@ -26,7 +26,7 @@ function About() {
 </div>
 <div className="lg:col-span-7 flex flex-col gap-8">
 <div className="flex items-center gap-4">
-<div className="h-[1px] w-12 bg-primary"></div>
+<div className="nano-accent"></div>
 <span className="text-primary font-bold tracking-[0.3em] uppercase text-[11px]">The Sovereign Navigator</span>
 </div>
 <h1 className="text-5xl md:text-7xl font-black tracking-tight text-on-surface leading-[0.95] text-balance">

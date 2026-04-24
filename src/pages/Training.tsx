@@ -205,13 +205,14 @@ function Training() {
 <div className="relative">
 <div className="absolute -top-6 -left-6 w-32 h-32 border-t-4 border-l-4 border-primary-container/10"></div>
 <div className="overflow-hidden rounded-2xl shadow-2xl aspect-[4/5] bg-surface-variant">
-<img className="w-full h-full object-cover" data-alt="Professional portrait of a male executive in a navy suit, reflecting confidence and approachability" src="/founder.jpg"/>
+<img className="w-full h-full object-cover" data-alt="Professional portrait" src="/founder-v2.jpg"/>
 </div>
-<div className="absolute -bottom-6 -right-6 w-32 h-32 border-b-4 border-r-4 border-primary-container/10"></div>
+<div className="absolute -bottom-6 -right-6 w-32 h-32 border-b-4 border-r-4 border-banana/20"></div>
 </div>
 <div>
+<div className="nano-banana mb-4"></div>
 <span className="text-[10px] font-bold uppercase tracking-widest text-primary mb-4 block">Executive Stewardship</span>
-<h3 className="text-4xl font-extrabold text-on-surface mb-8 tracking-tight">Meet Your Trainer</h3>
+<h3 className="text-4xl font-black text-on-surface mb-8 tracking-tight">Meet Your Trainer</h3>
 <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed mb-10">
 <p>
                                 Patrick R. Coyle is a seasoned biotech executive who has spent over two decades navigating the intersection of clinical success and financial sustainability. His career spans leadership roles in some of the most innovative life sciences organizations in the world.
@@ -239,25 +240,25 @@ function Training() {
 </div>
 <div className="space-y-4">
 {/*  Q1  */}
-<div className="bg-surface-container-lowest rounded-lg border border-outline-variant/30 overflow-hidden">
-<Link to="/training" className="w-full px-8 py-6 text-left flex items-center justify-between group">
+<details className="bg-surface-container-lowest rounded-lg border border-outline-variant/30 overflow-hidden group">
+<summary className="w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer outline-none list-none [&::-webkit-details-marker]:hidden">
 <span className="font-bold text-on-surface">Can these programs be delivered virtually?</span>
-<span className="material-symbols-outlined text-primary-container transition-transform group-focus:rotate-180">expand_more</span>
-</Link>
+<span className="material-symbols-outlined text-primary-container transition-transform group-open:rotate-180 duration-300">expand_more</span>
+</summary>
 <div className="px-8 pb-6 text-on-surface-variant leading-relaxed">
                             Yes. Both programs are designed for high-impact virtual delivery using interactive whiteboards and breakout rooms, or in-person workshop formats for regional teams.
                         </div>
-</div>
+</details>
 {/*  Q2  */}
-<div className="bg-surface-container-lowest rounded-lg border border-outline-variant/30 overflow-hidden">
-<Link to="/training" className="w-full px-8 py-6 text-left flex items-center justify-between group">
+<details className="bg-surface-container-lowest rounded-lg border border-outline-variant/30 overflow-hidden group">
+<summary className="w-full px-8 py-6 text-left flex items-center justify-between cursor-pointer outline-none list-none [&::-webkit-details-marker]:hidden">
 <span className="font-bold text-on-surface">What is the ideal group size for a workshop?</span>
-<span className="material-symbols-outlined text-primary-container transition-transform group-focus:rotate-180">expand_more</span>
-</Link>
+<span className="material-symbols-outlined text-primary-container transition-transform group-open:rotate-180 duration-300">expand_more</span>
+</summary>
 <div className="px-8 pb-6 text-on-surface-variant leading-relaxed">
                             To ensure meaningful discussion and hands-on practice, we recommend 12-20 participants per session. However, we can accommodate larger groups for keynote-style sessions.
                         </div>
-</div>
+</details>
 {/*  Q3  */}
 <details className="bg-surface-container-lowest rounded-lg border border-outline-variant/30 overflow-hidden group">
 <summary className="w-full flex justify-between items-center text-left cursor-pointer outline-none list-none [&::-webkit-details-marker]:hidden">

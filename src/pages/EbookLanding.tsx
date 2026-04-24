@@ -21,6 +21,7 @@ function EbookLanding() {
 <div className="inline-flex items-center px-3 py-1 bg-surface-container-low border-l-4 border-primary text-primary font-label text-xs font-bold tracking-widest uppercase">
                         FREE EBOOK | Patients + Profitability™
                     </div>
+<div className="nano-accent"></div>
 <h1 className="text-5xl lg:text-7xl font-headline font-black text-on-surface tracking-tighter leading-[1.1]">
                         Why Pharma Funds Access But Doesn't Control It
                     </h1>
@@ -43,7 +44,7 @@ function EbookLanding() {
 </ul>
 <div className="flex items-center gap-4 pt-6 border-t border-surface-variant max-w-md">
 <div className="w-12 h-12 rounded-full overflow-hidden bg-surface-container">
-<img className="w-full h-full object-cover" data-alt="professional portrait of an executive male in business attire with a confident expression and neutral office background" src="/founder.jpg" />
+<img className="w-full h-full object-cover" data-alt="professional portrait" src="/founder-v2.jpg" />
 </div>
 <div>
 <p className="text-sm font-label font-bold tracking-widest uppercase text-on-surface-variant">Author</p>
@@ -52,7 +53,7 @@ function EbookLanding() {
 </div>
 <div className="relative group max-w-sm pt-8">
 <div className="absolute inset-0 bg-primary/10 blur-3xl rounded-full scale-110 -z-10 group-hover:bg-primary/20 transition-colors"></div>
-<img className="rounded-lg executive-shadow border-4 border-white transform hover:-rotate-2 transition-transform duration-500" data-alt="3D professional ebook cover with blue background, bold yellow title 'Why Pharma Funds Access But Doesn't Control It', featuring a stylized dollar bill icon and Patients + Profitability logo" src="/images/img_2.jpg" />
+<img className="rounded-lg executive-shadow border-4 border-white transform hover:-rotate-2 transition-transform duration-500" data-alt="ebook cover" src="/images/img_2.jpg" />
 </div>
 </div>
 <div className="lg:col-span-5">
@@ -60,7 +61,7 @@ function EbookLanding() {
 <div className="absolute top-0 left-0 w-full h-1 bg-primary"></div>
 <h2 className="text-2xl font-headline font-bold text-on-surface mb-2">Get Your Free Copy</h2>
 <p className="text-on-surface-variant mb-8">Join hundreds of biotech leaders mastering the economics of access.</p>
-<form onSubmit={(e) => { e.preventDefault(); window.location.href = '/ebook/thank-you'; }} className="space-y-6">
+<form onSubmit={(e) => { e.preventDefault(); }} className="space-y-6">
 <div>
 <label className="block text-xs font-label font-bold tracking-widest uppercase text-on-surface-variant mb-2">First Name (Optional)</label>
 <input className="w-full px-4 py-3 bg-surface-container-low border border-outline-variant rounded-md focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="John Doe" type="text" />
@@ -75,7 +76,7 @@ function EbookLanding() {
                                     Yes, I'd like to receive the Patients + Profitability™ newsletter and tactical pharma insights.
                                 </label>
 </div>
-<Link to="/ebook/thank-you" className="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-lg hover:bg-primary/90 transition-colors cursor-pointer w-full text-center block">Get the Free Ebook</Link>
+<a href="/ebook.pdf" download="Profits-Profitability-Ebook.pdf" className="bg-primary text-on-primary px-8 py-4 rounded-md font-bold text-lg hover:bg-primary/90 transition-colors cursor-pointer w-full text-center block">Get the Free Ebook</a>
 </form>
 <p className="mt-6 text-center text-xs text-on-surface-variant">
                             We respect your privacy. No spam, ever.
@@ -165,7 +166,7 @@ function EbookLanding() {
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 <div className="relative">
 <div className="aspect-square bg-surface-variant rounded-xl overflow-hidden shadow-2xl">
-<img className="w-full h-full object-cover" data-alt="professional editorial headshot of Patrick R. Coyle in a modern architectural setting, natural lighting, wearing a navy blazer, high-end business portrait style" src="/founder.jpg" />
+<img className="w-full h-full object-cover" data-alt="professional editorial headshot" src="/founder-v2.jpg" />
 </div>
 <div className="absolute -bottom-6 -right-6 editorial-gradient p-8 rounded-lg shadow-xl hidden md:block">
 <p className="text-white font-headline font-bold text-2xl">15+ Years</p>

@@ -31,8 +31,8 @@ function LinkedInPost({ post }: { post: any }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="p-4 flex items-start gap-3">
-        <div className="w-12 h-12 rounded-full overflow-hidden bg-slate-100 shrink-0 border border-slate-100">
-          <img src="/founder.jpg" alt={post.author} className="w-full h-full object-cover" />
+        <div className="w-12 h-12 rounded-full overflow-hidden bg-surface-container shrink-0 border border-banana/20">
+          <img src="/founder-v2.jpg" alt={post.author} className="w-full h-full object-cover" />
         </div>
         <div className="min-w-0">
           <h4 className="text-sm font-bold text-on-surface hover:text-primary hover:underline cursor-pointer leading-tight">

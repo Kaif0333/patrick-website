@@ -97,6 +97,9 @@
     animation-name: zoom-in;
     transform: scale(0.95);
   }
+  .nano-accent {
+    @apply h-1 w-12 bg-primary rounded-full;
+  }
 }
 
 body { font-family: 'Inter', sans-serif; @apply bg-background text-on-background; }

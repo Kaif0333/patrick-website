@@ -17,7 +17,7 @@ export default function SocialGlimpse() {
           {/* YouTube Glimpse Card - High-Quality Founder Thumbnail */}
           <div className="bg-white rounded-[2.5rem] border border-outline-variant/10 shadow-[0_20px_50px_rgba(0,0,0,0.04)] hover:shadow-[0_40px_80px_rgba(31,62,146,0.08)] transition-all duration-500 hover:-translate-y-2 group overflow-hidden">
             <div className="relative h-56 overflow-hidden">
-              <img src="/founder.jpg" alt="Strategic Insight - YouTube" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/founder-v2.jpg" alt="Executive Insight" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500"></div>
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
@@ -41,7 +41,7 @@ export default function SocialGlimpse() {
           {/* LinkedIn Glimpse Card - High-Quality Founder Thumbnail */}
           <div className="bg-white rounded-[2.5rem] border border-outline-variant/10 shadow-[0_20px_50px_rgba(0,0,0,0.04)] hover:shadow-[0_40px_80px_rgba(31,62,146,0.08)] transition-all duration-500 hover:-translate-y-2 group overflow-hidden">
             <div className="relative h-56 overflow-hidden">
-              <img src="/founder.jpg" alt="Executive Perspective - LinkedIn" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src="/founder-v2.jpg" alt="Executive Perspective - LinkedIn" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500"></div>
               <div className="absolute top-4 left-4 flex items-center gap-2 px-3 py-1 bg-[#0A66C2] text-white text-[10px] font-black uppercase tracking-widest rounded-full shadow-lg">
                 <span className="material-symbols-outlined text-xs">share_reviews</span>

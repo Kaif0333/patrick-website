@@ -274,19 +274,25 @@ function Services() {
                         </div>
 </details>
 {/*  FAQ Item 4  */}
-<div className="group border border-surface-variant rounded-lg overflow-hidden">
-<Link to="/services/life-science-advisory" className="w-full flex items-center justify-between p-6 text-left hover:bg-surface-container-low transition-colors">
+<details className="group border border-surface-variant rounded-lg overflow-hidden">
+<summary className="w-full flex items-center justify-between p-6 text-left cursor-pointer outline-none list-none [&::-webkit-details-marker]:hidden">
 <span className="font-semibold text-on-surface">Are you available for board advisory or interim roles?</span>
-<span className="material-symbols-outlined text-primary">expand_more</span>
-</Link>
-</div>
+<span className="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div className="px-8 pb-6 text-on-surface-variant leading-relaxed border-t border-surface-variant/30 pt-4 hidden group-open:block animate-in fade-in slide-in-from-top-2">
+                             Yes, I frequently serve in interim executive capacities and as a strategic advisor to boards during critical transition periods, restructuring, or high-stakes commercial milestones.
+                        </div>
+</details>
 {/*  FAQ Item 5  */}
-<div className="group border border-surface-variant rounded-lg overflow-hidden">
-<Link to="/contact" className="w-full flex items-center justify-between p-6 text-left hover:bg-surface-container-low transition-colors">
+<details className="group border border-surface-variant rounded-lg overflow-hidden">
+<summary className="w-full flex items-center justify-between p-6 text-left cursor-pointer outline-none list-none [&::-webkit-details-marker]:hidden">
 <span className="font-semibold text-on-surface">Do you handle operational finance or just strategy?</span>
-<span className="material-symbols-outlined text-primary">expand_more</span>
-</Link>
-</div>
+<span className="material-symbols-outlined text-primary group-open:rotate-180 transition-transform duration-300">expand_more</span>
+</summary>
+<div className="px-8 pb-6 text-on-surface-variant leading-relaxed border-t border-surface-variant/30 pt-4 hidden group-open:block animate-in fade-in slide-in-from-top-2">
+                             While my focus is strategic, effective stewardship requires operational integrity. I provide guidance on operational finance processes, GTN automation, and ERP implementations to ensure strategy is supported by robust data.
+                        </div>
+</details>
 {/*  FAQ Item 6  */}
 <details className="group border border-surface-variant rounded-lg overflow-hidden group">
 <summary className="w-full flex justify-between items-center text-left cursor-pointer outline-none list-none [&::-webkit-details-marker]:hidden">
