@@ -349,8 +349,7 @@ function Home() {
 <div className="max-w-7xl mx-auto">
 <div className="bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col lg:flex-row items-stretch border border-outline-variant/20">
 <div className="lg:w-1/3 relative min-h-[300px]">
-<img alt="" className="w-full h-full object-cover" data-alt="professional ebook cover design with a deep blue background titled Why Pharma Funds Access But Does Not Control It" src="/images/img_14.jpg"/>
-<div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
+<img alt="Why Does Pharma Funding Prioritize Market Access Over Disease Control - Executive Ebook Cover" className="w-full h-full object-cover object-center" src="/pharma-access-cover.png"/>
 </div>
 <div className="lg:w-2/3 p-8 md:p-12 flex flex-col justify-center">
 <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary mb-4">Executive Insight Series</span>
