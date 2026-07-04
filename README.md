@@ -2,8 +2,6 @@
 
 A professional consulting website redesign built with React, TypeScript, Vite, Tailwind CSS, and React Router.
 
-![Project Preview](https://github.com/Kaif0333/Kaif0333/raw/main/assets/previews/patrick-coyle.svg)
-
 The project presents Patrick R. Coyle's advisory services through a clean multi-page experience with service pages, training pages, ebook landing flow, contact flow, and consultation success flow.
 
 ## Live Website
