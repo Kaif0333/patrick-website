@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# Patrick R. Coyle Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional consulting website redesign built with React, TypeScript, Vite, Tailwind CSS, and React Router.
 
-Currently, two official plugins are available:
+The project presents Patrick R. Coyle's advisory services through a clean multi-page experience with service pages, training pages, ebook landing flow, contact flow, and consultation success flow.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Website
 
-## React Compiler
+- [Patrick R. Coyle Website](https://patrick-rcoyle.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
 
-## Expanding the ESLint configuration
+- Multi-page consulting website structure
+- Service pages for financial navigation, financial transformation, life science advisory, and profitability-focused advisory
+- Training pages for fundamentals, rising leaders, and profitability education
+- Ebook landing page and thank-you flow
+- Consultation success page
+- Responsive frontend built for modern desktop and mobile browsing
+- Clean routing using React Router
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Area | Tools |
+|---|---|
+| Frontend | React 19, TypeScript |
+| Build Tool | Vite |
+| Styling | Tailwind CSS |
+| Routing | React Router DOM |
+| Quality | ESLint |
+| Deployment | Vercel |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Main Routes
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Route | Purpose |
+|---|---|
+| `/` | Home page |
+| `/about` | About page |
+| `/contact` | Contact page |
+| `/services` | Services overview |
+| `/services/financial-navigation` | Financial navigation service page |
+| `/services/financial-transformation` | Financial transformation service page |
+| `/services/life-science-advisory` | Life science advisory page |
+| `/services/patients-profitability` | Profitability service page |
+| `/training` | Training overview |
+| `/training/fundamentals` | Training fundamentals page |
+| `/training/patients-profitability` | Profitability training page |
+| `/training/rising` | Rising leaders training page |
+| `/ebook` | Ebook landing page |
+| `/ebook/thank-you` | Ebook thank-you page |
+| `/consultation/success` | Consultation success page |
+
+## Local Development
+
+```bash
+git clone https://github.com/Kaif0333/patrick-website.git
+cd patrick-website
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Production Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
+npm run preview
 ```
+
+## Project Purpose
+
+This project demonstrates frontend website development for a professional consulting brand, including page routing, business-focused content sections, responsive layout, and conversion-oriented flows.
